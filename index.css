@@ -21,7 +21,7 @@ html {
 body {
   font-size: 1.4rem;
   font-family: "", sans-serif;
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 
 img,
@@ -194,4 +194,21 @@ h3 {
 .grid-bg{
     background-color: rgba(26,28,40,255);
     padding-top: 17rem;
+}
+/* -----------------Buttons----------------- */
+.lux-car-btn{
+    color: var(--Brightorange);
+   position: absolute;
+   right: 10%;
+   top: 3rem;
+}
+.lux-car-btn:hover{
+    background: transparent;
+}
+.grid-btn{
+    border: 1px solid var(--Brightorange);
+    
+}
+.article{
+    margin-top:3rem;
 }
