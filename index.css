@@ -1,0 +1,197 @@
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+/* resets */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "", sans-serif;
+  padding-top: 10rem;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+  background-size: cover;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p,
+h1,
+h2,
+h3 {
+  overflow-wrap: break-word;
+}
+/* -----------------colors------------------------ */
+:root {
+  /* -------primary colors-------- */
+  --Brightorange: hsl(31, 77%, 52%);
+  --Darkcyan: hsl(184, 100%, 22%);
+  --Verydarkcyan: hsl(179, 100%, 13%);
+
+  /* -------secondary colors-------- */
+  /* --paragraphs colors-------------*/
+  --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+  /* --background, headings, buttons*/
+  --Verylightgray: hsl(0, 0%, 95%);
+
+/* -----------------fonts------------------------ */
+--BSD:'Big Shoulders Display', cursive;
+--LD:'Lexend Deca', sans-serif;
+}
+/* -----------------custom class----------------- */
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+  padding: 3rem;
+  width: 20%;
+}
+.content-text{
+    font-size: 1.5rem;
+    color: var(--Transparentwhite);
+    font-family: var(--LD);
+    margin-bottom: 8rem;
+    line-height: 1.6;
+}
+.cta{
+    border-radius: 20px;
+    padding:1rem 3rem;
+    background: white;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-family: var(--LD);
+
+}
+.content-heading{
+    padding: 4rem 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: var(--BSD);
+    color: var(--Verylightgray);
+}
+/* -----------------styling----------------- */
+.sedan{
+    background-color: var(--Brightorange);
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.suv{
+    background-color: var(--Darkcyan);
+}
+.orange-cta{
+    color: var(--Brightorange);
+}
+.dark-cyan-cta{
+    color: var(--Darkcyan);
+}
+.luxury{
+    background-color: var(--Verydarkcyan);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.very-dark-cyan-cta{
+    color: var(--Verydarkcyan);
+}
+.cta:active
+{
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+.card{
+    width: 100%;
+    min-width: 13rem;
+}
+@media screen and (max-width:1235px){
+    .flex{
+        flex-direction: column;
+    }
+    .container{
+        width: 60%;
+        max-width: 60rem;
+    }
+    .sedan{
+       border-top-right-radius: 6px;
+       border-bottom-left-radius: 0;
+    }
+    .luxury{
+        border-radius: 0;
+    }
+}
+@media screen and (max-width:500px){
+    .container{
+        width: 80%;
+    }
+}
+/* -----------------Second styling----------------- */
+.article > *{
+   border-radius: 3px;
+}
+.article{
+    display: grid;
+    grid-template-areas:
+     'a a b'
+     'c d d'
+     'c e e'
+     ;
+     width: 40%;
+     margin-inline: auto;
+     gap: 1rem;
+     align-items: center;
+}
+.a{
+    grid-area: a;
+    height:14rem;
+}
+.b{
+    grid-area: b;
+    height:14rem;
+}
+.c{
+    grid-area: c;
+    height:14rem;
+}
+.d{
+    grid-area: d;
+    height:6rem;
+}
+.e{
+    grid-area: e;
+    height: 7rem;
+}
+.grid-bg{
+    background-color: rgba(26,28,40,255);
+    padding-top: 17rem;
+}
